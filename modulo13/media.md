@@ -1,0 +1,17 @@
+# considerando que os bichos podem voltar;
+-Pegar a ovelha
+-Atravessar o rio
+-Deixá-la 
+-Voltar
+-Pegar a alfafa 
+-Atravessar o rio
+-Deixá-la
+-Pegar a ovelha
+-Voltar 
+-Deixá-la
+-Pegar o Lobo
+-Atravessar o rio
+-Deixá-lo
+-Voltar 
+-Pegar a ovelha
+-Atravessar
