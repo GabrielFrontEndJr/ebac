@@ -1,0 +1,213 @@
+body {
+	
+	background-color:black;
+	background-size:cover;
+	font-family: 'Ubuntu', sans-serif;
+	overflow-x:hidden;
+	color:white;
+	height:100%;
+	flex-direction:colum;
+}
+
+#cabeca {
+	
+	width:100%;
+	position:relative;
+	object-fit:cover;
+}
+
+#caixa {
+	
+	background:rgba(14,8,110,0.4);
+	width:280px;
+	color:white;
+	padding:25px;
+	border-width:1px;
+	border-style: solid;
+	border-color:white;
+	position:absolute;
+	top:0;
+	right:0;
+	margin:20px;
+}
+
+#caixa input {
+	
+	margin-left:40%;
+	margin-right:40%;
+	
+}
+
+.texto{
+	
+	padding:30px;
+	font-size:30px;
+	margin-left:30px;
+	margin-right:30px;
+	border-width:1px;
+	border-style: solid;
+	border-color:white;
+}
+
+
+#hexagono {
+	width:280px;
+	padding:30px;
+	font-size:30px;
+	margin:100px;
+	float:left;
+	background:rgba(14,8,110,0.4);
+
+}
+
+#boreal {
+	width:280px;
+	padding:30px;
+	font-size:30px;
+	float:right;
+	margin:100px;
+	background:rgba(14,8,110,0.4);
+
+}
+
+#segundo2 {
+	
+	width:400px;
+	float:left;
+	margin-top:100px;
+
+	
+}
+
+#segundo {
+	
+	width:400px;
+	float:right;
+	margin:30px;
+	
+}
+
+span {
+	
+	margin-left:40%;
+	margin-right:40%;
+	
+}
+
+a{
+	text-decoration:none;
+	color:inherit;
+}
+
+a:hover{
+	
+		color:coral;
+		transition: all 0.5s;
+		cursor: pointer;
+	
+}
+@media(min-width:811px){
+		#caixatp {
+			display:none;
+		}
+		
+		#mobiel{
+			display:none;
+		}
+}
+@media(max-width:810px){
+	
+		#caixa {
+			
+			display:none;
+		}
+		
+		#caixatp {
+	
+			background:rgba(14,8,110,0.4);
+			width:400px;
+			color:white;
+			padding:25px;
+			border-width:1px;
+			border-style: solid;
+			border-color:white;
+			margin:auto;
+			margin-bottom:100px;
+			margin-top:140px;
+			font-size:40px;
+		}
+		
+		#desktop{
+			display:none;
+		}
+		
+		
+		.texto{
+			font-size:20px;
+			border-width:0;
+		}
+		
+		
+		
+		#mobiel{
+			margin-left:auto;
+			margin-right:auto;
+			font-size:25px;
+		}
+		
+		.textmobiel{
+			margin-left:30%;
+			margin-right:30%;
+			margin-top:150px;
+			padding:20px;
+			background:rgba(14,8,110,0.4);
+		}
+		
+		
+		
+		img {
+			width:400px;
+			margin-top:100px;
+			margin-bottom:100px;
+			margin-left:25%;
+			margin-right:30%;
+		}
+		
+		#formulario{
+			font-size:15px;
+		}
+		
+}
+
+@media(max-width:500px) {
+	body {
+		overflow-x:hidden;
+	}
+	
+	.textmobiel{
+		margin-left:10%;
+		margin-right:10%;
+		margin-top:100px;
+		padding:20px;
+		background:rgba(14,8,110,0.4);
+		}
+		
+	
+	img {
+		width:300px;
+		margin-left:10%;
+		margin-right:10%;
+		margin-top:100px;
+		margin-bottom:100px;
+	}
+	
+	#caixatp {
+	
+		width:200px;
+		font-size:20px;
+		margin-bottom:40px;
+		margin-top:40px;
+	}
+
+	
+}

@@ -1,0 +1,192 @@
+body {
+
+	background-image: url(../Foto/star.jpg);
+	background-size:cover;
+	color:white;
+	background-attachment: fixed;
+	overflow-x:hidden;
+	font-family:arial;
+}
+	
+
+a{
+	text-decoration:none;
+	color:inherit;
+	
+}
+
+section{
+	background-color:rgba(255,255,255,0.4);
+	padding:30px;
+	width:600px;
+	margin-left:auto;
+	margin-right:auto;
+	margin-bottom:10px;
+}
+
+section a{
+	
+	margin:30px;
+	
+}
+
+
+
+nav{
+	float:left;
+	margin-top:30px;
+	margin-left:20px;
+	background-color:rgba(255,255,255,0.4);
+	height:470px;
+	border-radius:10px;
+	position: fixed;
+	width:200px;
+}
+
+
+.fundo{
+	float:middle;
+	width:600px;
+	margin-right:auto;
+	margin-left:auto;
+	background-color:rgba(14,8,110,0.4);
+	padding:30px;
+	align-items: center;
+	
+}
+
+a:hover{
+		color:coral;
+		transition: all 0.5s;
+		cursor: pointer;
+}
+
+#tela {
+	background-color: rgba(14,8,110,0.4);
+	width:300px;
+	margin-left:auto;
+	margin-right:auto;
+	
+}
+
+
+
+h1{
+	
+	text-align:center;
+	
+}
+
+.planeta {
+	
+	width:200px;
+	
+}
+
+#pluto {
+	
+	margin-left:150px;
+	margin-right:150px;
+	
+}
+
+
+.plants {
+	
+	display: inline-block;
+	margin:40px;
+	align-items: center;
+	text-align:center;
+	
+}
+
+img:hover {
+	
+	transition: all .5s;
+	order: 10px solid #136497;
+	transform: scale(1.01);
+	
+	
+}
+
+form{
+	background-color:rgba(0,0,0,0.4);
+	padding:30px;
+	margin-left:auto;
+	margin-right:auto;
+	width:600px
+	
+}
+
+fieldset {
+	
+	width:200px;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+#enviar {
+	
+	margin-left:40%;
+	margin-right:50%;
+	
+}
+
+	@media(min-width:900px){
+		
+		section{
+			
+			display:none;
+			
+		}
+		
+		.fundo{
+			margin-left:300px;
+		}
+		
+		
+	}
+	
+	
+	@media(max-width:900px){
+		
+		nav{
+			display:none;
+		}
+		
+	}
+
+	@media(max-width:500px){
+		
+		.fundo{
+			
+			width:400px;
+			
+		}
+		
+		section{
+			
+			width:400px;
+			
+		}
+		
+		section a{
+			
+			margin:10px;
+			
+		}
+
+		#pluto {
+			
+			margin-left:auto;
+			margin-right:auto;
+			
+		}
+		
+		form {
+			
+			width:400px
+			
+		}
+	}
+
