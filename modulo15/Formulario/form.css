@@ -25,6 +25,7 @@ body {
     border: 2px solid #3E445B;
     width: 450px;
     max-width: 100%;
+    margin-top: 15px;
 }
 
 .cabeca {
@@ -120,3 +121,17 @@ body {
     background-color: #584ff5;
     transition: 0.3s;
 }
+
+/*
+    Firefox 
+input[type=number] {
+    -moz-appearance: textfield;
+  }
+
+    Chrome, Safari, Edge, Opera 
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+*/
