@@ -1,0 +1,52 @@
+@import './paleta.scss';
+body{
+  overflow-x: hidden;
+  border: 0;
+  padding: 0;
+}
+
+h3{
+  opacity: 0;
+  margin-top: auto;
+}
+
+p {
+  margin: 0;
+}
+
+@mixin fundo($fundo, $cor){
+    background-color: $fundo;
+    color:$cor;
+}
+
+.dinossauro {
+
+  @include fundo($primaria, white );
+  transition: transform .5s ease;
+  &:hover{
+    border: solid $secundaria 1px;
+    transform: scale(1.1);
+    h3{
+      opacity: 1; 
+    }
+  }  
+}
+
+.t-rex{
+  @include fundo(black, white);
+  @extend .dinossauro
+}
+
+#dininho{
+  size: 300px;
+}
+
+#butazin{
+  color: white;
+  background-color: white;
+}
+
+footer{
+    border: 0;
+    
+  }
