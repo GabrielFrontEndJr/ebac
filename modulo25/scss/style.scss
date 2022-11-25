@@ -1,0 +1,75 @@
+$color-font: #33d ;
+$color-bg-default: #a9f;
+$color-bg-boxes: #FD3;
+$font-default: Arial, Helvetica, sans-serif;
+$font-size-default: 1.6rem;
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background-color: $color-bg-default;
+    font-family: $font-default;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    overflow-x: hidden;
+}
+#sobre{
+    margin:20px;
+}
+h1 {
+    color: rgb(0, 0, 0);
+    text-align: center;
+    margin-top: 4rem;
+}
+header{
+    background-color: rgb(3, 3, 17);
+}
+
+h2 {
+    margin-top:auto;
+    margin-bottom: auto;
+    padding: 30px;
+    color: rgb(255, 255, 255);
+}
+nav{
+    display: flex;
+    & a{
+        padding: 10px;
+        font-size: 25px;
+        text-decoration: none;
+        color: white;
+    }
+    & a:hover{
+        color: gray;
+    }
+}
+header,
+section,
+footer {
+    display: block;
+    float: left;
+    width: 100%;
+}
+
+.container {
+    display: flex;
+    flex-flow: column;
+    margin: 0 auto;
+    max-width: 90vw;
+}
+
+.cabeca {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 90vw;
+}
+
+
+
+
+@import 'vitrine'
