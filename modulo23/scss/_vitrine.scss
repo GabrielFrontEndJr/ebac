@@ -67,4 +67,17 @@
             box-shadow: 0 0 2px 2px $color-secondary;
         }
     }
+
+    @media (max-width: 1000px) {
+        grid-template-columns: repeat(3, 1fr);
+
+    }
+    @media (max-width: 900px) {
+        grid-template-columns: repeat(2, 1fr);
+        
+
+    }
+    @media (max-width: 600px) {
+        display: block;
+    }
 }
