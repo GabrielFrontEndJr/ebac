@@ -9,6 +9,7 @@
 
     <script src="js/jquery-3.6.0.js"></script>
     <script src="js/jquery.mask.js"></script>
+
     <script>
         $(document).ready(function(){
 			$("#cpf").mask("000.000.000-00")
@@ -65,13 +66,13 @@
             </span></button>
           <div class="navbar-collapse collapse" id="manuel">
             <ul class="navbar-nav" >
-              <li class="nav-item"><a href="loja.html" class="nav-link text-light">Dinocards</a></li>
-              <li class="nav-item"><a href="index.html" class="nav-link text-light">DinoPédia</a></li>
+              <li class="nav-item"><a href="loja.html" class="nav-link text-light">DinoToy's'</a></li>
+              <li class="nav-item"><a href="index.html" class="nav-link text-light">Vitrine</a></li>
             </ul>
           </div>
         </div>
       </nav>
-    <h1 class="text-center">Dinocard's</h1>
+    <h1 class="text-center">DinoToy's'</h1>
     <div id="banner" class="container-fluid carousel slide  w-50 " data-bs-ride="carousel">
         <div id="indicadores" class="carousel-indicators">
             <button type="button" data-bs-target="#banner" data-bs-slide-to="0" class="active"></button>
@@ -115,168 +116,106 @@
         </div>
             
         
-        
-    
-    
-<!--
-    <form class="mt-2">
-        <div class="bg-light bg-dark border py-2 w-50 mx-auto w-60 rounded">
-            <div class="form-floating w-50 mb-2 mt-2 mx-auto">
-                <input type="text" class="form-control" id="nome" placeholder="Primeiro nome" name="Nome">
-                <label for="nome">Primeiro nome</label>
-            </div>
-    
-            <div class="form-floating w-50 bg-primary mb-2 mx-auto">
-                <input type="text" name="sobrenome" placeholder="Sobrenome" id="sobrenome" class="form-control">
-                <label class="form-label" for="sobrenome">Sobrenome</label>
-            </div>
-        
-            <div class="form-floating w-50 mb-2 mx-auto">
-                <input type="email" class="form-control" placeholder="Email" id="email" name="email">
-                <label class="form-label" for="email">Email</label>
-            </div>
-        
-            <div class="form-floating w-50 mb-2 mx-auto">
-                <input type="number" class="form-control" placeholder="Idade" id="idade" name="idade">
-                <label class="form-label" for="idade">Idade</label>
-            </div>
-    
-            <div class="form-floating w-50 mb-2 mx-auto">
-                <input type="tel" id="phone" name="phone" class="form-control" placeholder="Telefone">
-                <label class="form-label" for="phone">Telefone</label>
-            </div> 
-            
-            
-            <div class=" form-floating w-50 mb-2 mx-auto">
-                
-                <select autofocus name="dinossauro" class="form-select" id="dinossauro" placeholder="Selecionar">
-                    
-                    <option value="vd" disable>Selecionar</option>
-                    <option value="v1">Tiranossauro</option>
-                    <option value="v2">Pescoçudo</option>
-                    <option value="v3">Mosassauru</option>
-                    <option value="v4">rabudo</option>
-                    <option value="v5">3 Chifre</option>
-                    <option value="v6">Cabeça de muranga</option>
-                    
-                  </select>
-                  <label class="form-label" for="dinossauro">Selecione o seu dinossauro</label>
-            </div>
-        </div>
-        
-    </form>
--->
-<div class="modal fade" id="modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">Dinocard</h5>
-          <button type="button" class="btn btn-close btn-danger" data-bs-dismiss="modal" data-bs-target="#modal"></button>
-          </button>
-        </div>
-        <div class="modal-body">
-          <form id="cadastro" class="was-validated">
-            <div class="d-flex gap-1 my-2">
-                <div class="form-floating w-50 mb-2 mt-2">
-                    <input type="text" class="form-control" id="nome" placeholder="Primeiro nome" name="Nome" required>
-                    <label for="nome">Primeiro nome</label>
-                    <div class="valid-tooltip">Obrigad@!</div>
-                    <div class="invalid-tooltip">Preenche aqui, pufavo :(</div>
-                </div>
-        
-                <div class="form-floating w-50 my-2 mx-auto">
-                    <input type="text" name="sobrenome" placeholder="Sobrenome" id="sobrenome" class="form-control" required>
-                    <label class="form-label" for="sobrenome">Sobrenome</label>
-                    <div class="valid-tooltip">Obrigad@!</div>
-                    <div class="invalid-tooltip">Preenche aqui, pufavo :(</div>
-                </div>
-            </div>
-           
-            <div class="form-floating mb-2 mx-auto">
-                <input type="text" class="form-control" placeholder="Email" id="email" name="email" required>
-                <label class="form-label" for="email">email</label>
-                <div class="valid-tooltip">Obrigad@!</div>
-                <div class="invalid-tooltip">Preenche aqui, pufavo :(</div>
-            </div>
+        <div class="container w-50" >
+            <form id="cadastro mb-5" >
+                <div class="d-flex gap-1 my-2">
+                    <div class="form-floating w-50 mb-2 mt-2">
+                        <input type="text" class="form-control" id="nome" placeholder="Primeiro nome" name="Nome" required>
+                        <label for="nome">Primeiro nome</label>
+                        <div class="valid-tooltip">Obrigad@!</div>
+                        <div class="invalid-tooltip">Preenche aqui, pufavo :(</div>
+                    </div>
 
-            <div class="d-flex gap-1 my-2">
-                <div class="form-floating mb-2 mx-auto">
-                    <input type="text" class="form-control" placeholder="CPF" id="cpf" name="cpf" required>
-                    <label class="form-label" for="rua">CPF</label>
-                    <div class="valid-tooltip">Obrigad@!</div>
-                    <div class="invalid-tooltip">Preenche aqui, pufavo :(</div>
+                    <div class="form-floating w-50 my-2 mx-auto">
+                        <input type="text" name="sobrenome" placeholder="Sobrenome" id="sobrenome" class="form-control" required>
+                        <label class="form-label" for="sobrenome">Sobrenome</label>
+                        <div class="valid-tooltip">Obrigad@!</div>
+                        <div class="invalid-tooltip">Preenche aqui, pufavo :(</div>
+                    </div>
                 </div>
-    
-                <div class="form-floating mb-2 mx-auto">
-                    <input type="text" class="form-control" placeholder="RG" id="rg" name="rg" required>
-                    <label class="form-label" for="rg">RG</label>
-                    <div class="valid-tooltip">Obrigad@!</div>
-                    <div class="invalid-tooltip">Preenche aqui, pufavo :(</div>
-                </div>
-            </div>
 
-            <div class="d-flex gap-1 my-2">
                 <div class="form-floating mb-2 mx-auto">
-                    <input type="text" class="form-control" placeholder="Rua e número" id="rua" name="rua" required>
-                    <label class="form-label" for="rua">Rua e nº</label>
+                    <input type="text" class="form-control" placeholder="Email" id="email" name="email" required>
+                    <label class="form-label" for="email">email</label>
                     <div class="valid-tooltip">Obrigad@!</div>
                     <div class="invalid-tooltip">Preenche aqui, pufavo :(</div>
                 </div>
-    
-                <div class="form-floating mb-2 mx-auto">
-                    <input type="text" class="form-control" placeholder="CEP" id="cep" name="cep" required>
-                    <label class="form-label" for="cep">CEP</label>
-                    <div class="valid-tooltip">Obrigad@!</div>
-                    <div class="invalid-tooltip">Preenche aqui, pufavo :(</div>
-                </div>
-            </div>
-            
 
-            <div class="d-flex gap-1 my-2">
-                <div class="form-floating w-50 mb-2 mx-auto">
-                    <input type="tel" id="celular" name="celular" class="form-control" placeholder="Telefone" required>
-                    <label class="form-label" for="celular">Telefone</label>
-                    <div class="valid-tooltip">Obrigad@!</div>
-                    <div class="invalid-tooltip">Preenche aqui, pufavo :(</div>
-                </div> 
-            
-                <div class="form-floating w-50 mb-2 mx-auto">
-                    <input type="text" class="form-control" placeholder="Data de nascimento" id="dataNascimento" name="idade" required>
-                    <label class="form-label" for="dataNascimento">Data de nascimento</label>
-                    <div class="valid-tooltip">Obrigad@!</div>
-                    <div class="invalid-tooltip">Preenche aqui, pufavo :(</div>
+                <div class="d-flex gap-1 my-2">
+                    <div class="form-floating w-50 mb-2 mx-auto">
+                        <input type="text" class="form-control" placeholder="CPF" id="cpf" name="cpf" required>
+                        <label class="form-label" for="rua">CPF</label>
+                        <div class="valid-tooltip">Obrigad@!</div>
+                        <div class="invalid-tooltip">Preenche aqui, pufavo :(</div>
+                    </div>
+
+                    <div class="form-floating w-50 mb-2 mx-auto">
+                        <input type="text" class="form-control" placeholder="RG" id="rg" name="rg" required>
+                        <label class="form-label" for="rg">RG</label>
+                        <div class="valid-tooltip">Obrigad@!</div>
+                        <div class="invalid-tooltip">Preenche aqui, pufavo :(</div>
+                    </div>
                 </div>
+
+                <div class="d-flex gap-1 my-2">
+                    <div class="form-floating w-50 mb-2 mx-auto">
+                        <input type="text" class="form-control" placeholder="Rua e número" id="rua" name="rua" required>
+                        <label class="form-label" for="rua">Rua e nº</label>
+                        <div class="valid-tooltip">Obrigad@!</div>
+                        <div class="invalid-tooltip">Preenche aqui, pufavo :(</div>
+                    </div>
+
+                    <div class="form-floating w-50 mb-2 mx-auto">
+                        <input type="text" class="form-control" placeholder="CEP" id="cep" name="cep" required>
+                        <label class="form-label" for="cep">CEP</label>
+                        <div class="valid-tooltip">Obrigad@!</div>
+                        <div class="invalid-tooltip">Preenche aqui, pufavo :(</div>
+                    </div>
+                </div>
+
+
+                <div class="d-flex gap-1 my-2">
+                    <div class="form-floating w-50 mb-2 mx-auto">
+                        <input type="tel" id="celular" name="celular" class="form-control" placeholder="Telefone" required>
+                        <label class="form-label" for="celular">Telefone</label>
+                        <div class="valid-tooltip">Obrigad@!</div>
+                        <div class="invalid-tooltip">Preenche aqui, pufavo :(</div>
+                    </div>
+
+                    <div class="form-floating w-50 mb-2 mx-auto">
+                        <input type="text" class="form-control" placeholder="Data de nascimento" id="dataNascimento" name="idade" required>
+                        <label class="form-label" for="dataNascimento">Data de nascimento</label>
+                        <div class="valid-tooltip">Obrigad@!</div>
+                        <div class="invalid-tooltip">Preenche aqui, pufavo :(</div>
+                    </div>
+
+
+                    <div class=" form-floating w-50 mb-2 mx-auto">
+
+                        <select autofocus name="dinossauro" class="form-select" id="dinossauro" placeholder="Selecionar" required>
+
+                            <option value="vd" disable></option>
+                            <option value="v1">Tiranossauro</option>
+                            <option value="v2">Pescoçudo</option>
+                            <option value="v3">Mosassauru</option>
+                            <option value="v4">rabudo</option>
+                            <option value="v5">3 Chifre</option>
+                            <option value="v6">Cabeça de muranga</option>
+
+                        </select>
+                        <label class="form-label" for="dinossauro">Dinossauro</label>
+                        <div class="valid-tooltip">Obrigad@!</div>
+                        <div class="invalid-tooltip">Seleciona um, pufavo :(</div>
+                    </div>
+                </div>
+
+            </form>
+        </div>
+    
+    
+
         
-                
-                <div class=" form-floating w-50 mb-2 mx-auto">
-                    
-                    <select autofocus name="dinossauro" class="form-select" id="dinossauro" placeholder="Selecionar" required>
-                        
-                        <option value="vd" disable></option>
-                        <option value="v1">Tiranossauro</option>
-                        <option value="v2">Pescoçudo</option>
-                        <option value="v3">Mosassauru</option>
-                        <option value="v4">rabudo</option>
-                        <option value="v5">3 Chifre</option>
-                        <option value="v6">Cabeça de muranga</option>
-                        
-                    </select>
-                    <label class="form-label" for="dinossauro">Dinossauro</label>
-                    <div class="valid-tooltip">Obrigad@!</div>
-                    <div class="invalid-tooltip">Seleciona um, pufavo :(</div>
-                </div>
-            </div>
-            
-          </form>
-        </div>
-        <div class="modal-footer">
-            <button type="button" class="btn btn-danger" data-bs-dismiss="modal" data-bs-target="#modal">Fechar</button>
-            <button type="submit" form="cadastro" class="btn btn-primary">Enviar</button>
-            
-        </div>
-      </div>
-    </div>
-  </div>
+    
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 
     <script>
