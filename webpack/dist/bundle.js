@@ -1,0 +1,1 @@
+(()=>{"use strict";var e,o;console.log("Testando a budega di novo"),e=4,o=5,console.log(e+o),(new class{create(e){const o=document.createElement("h2");o.innerText=e,o.classList.add("main-title"),document.querySelector("body").appendChild(o)}}).create("Israel não é um estado legítimo")})();
