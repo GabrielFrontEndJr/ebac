@@ -7,7 +7,7 @@ const image = 'gulp-image'
 
 function tarefasCSS(cb) {
 
-    return gulp.src('./vendor/**/*.css')
+    return gulp.src('./vendor/css/*.css')
         .pipe(concat('libs.css'))
         .pipe(cssmin())
         .pipe(rename({ suffix: '.min'})) // libs.min.css
@@ -15,38 +15,10 @@ function tarefasCSS(cb) {
 
 }
 
-function bootstrapCSS(cb) {
-
-    return gulp.src('./node_modules/bootstrap/**/*.css')
-        .pipe(concat('bots.css'))
-        .pipe(cssmin())
-        .pipe(rename({ suffix: '.min'})) // .min.css
-        .pipe(gulp.dest('./dist/css'))
-
-}
-
-function bootstrapJS(cb) {
-
-    return gulp.src('./node_modules/bootstrap/**/*.js')
-        .pipe(concat('bots.js'))
-        .pipe(cssmin())
-        .pipe(rename({ suffix: '.min'})) // .min.css
-        .pipe(gulp.dest('./dist/js'))
-
-}
-
-function jqueroJS(){
-
-    return gulp.src('./node_modules/jquery/**/*.js')
-        .pipe(concat('jquero.js'))
-        .pipe(uglify())
-        .pipe(rename({ suffix: '.min'})) //libs.min.js
-        .pipe(gulp.dest('./dist/js'))
-}
 
 function tarefasJS(){
 
-    return gulp.src('./node/**/*.js')
+    return gulp.src('./vendor/js/*.js')
         .pipe(concat('libs.js'))
         .pipe(uglify())
         .pipe(rename({ suffix: '.min'})) //libs.min.js
@@ -57,7 +29,6 @@ function tarefasJS(){
 function tarefasImagem(){
     
     return gulp.src('./vendor/images/*')
-    .pipe(rename({ suffix: '.min'}))
         .pipe(gulp.dest('./dist/images'))
 }
 
