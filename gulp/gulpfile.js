@@ -25,6 +25,15 @@ function tarefasJS(){
         .pipe(gulp.dest('./dist/js'))
 }
 
+function tarefasHTML(callback){
+
+    gulp.src('./*.html')
+        .pipe(htmlmin({ collapseWhitespace: true }))
+        .pipe(gulp.dest('./dist'))
+
+    return callback()
+
+}
 
 function tarefasImagem(){
     
@@ -32,6 +41,7 @@ function tarefasImagem(){
         .pipe(gulp.dest('./dist/images'))
 }
 
+exports.html = tarefasHTML
 exports.styles = tarefasCSS
 exports.scripts = tarefasJS
 exports.images = tarefasImagem

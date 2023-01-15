@@ -1,1 +1,0 @@
-É só clicar no index e rodar :)

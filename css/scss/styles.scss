@@ -1,0 +1,263 @@
+$color-primary:    #e9251f;
+$color-secondary:  #fdedec;
+$font-color-primary: #ffffff;
+$font-color-secondary: #ff0707;
+$font-default: Arial, Helvetica, sans-serif;
+$font-size-default: 1.6rem;
+
+@import 'fonts';
+@import url('https://fonts.googleapis.com/css2?family=Fruktur&display=swap');
+
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background-color: $color-primary;
+    font-family: $font-default;
+    overflow-x: hidden;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    font: $font-default;
+}
+.cabeca{
+    height: 5vh;
+    display: flex;
+    justify-content: space-between;
+}
+
+h1 {
+    color: $font-color-primary;
+    text-align: center;
+    margin-top: 4rem;
+}
+
+h2 {
+    color: $font-color-primary;
+    font-family: 'freshman', sans-serif;
+    font-weight: 700;
+    font-size: 2rem;
+    margin-top: 4rem;
+    text-shadow: 1px 2px 8px #FFFFFF;
+}
+
+.nav {
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+    margin: 10vh;
+    
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.container 
+{
+    position: relative;
+    display: flex;
+    margin: 0 auto;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+
+    
+
+    &_1 {
+        @extend .container;
+        background-color: $color-secondary;
+        align-items: center;
+        article{
+            width: 40%;
+            height: auto;
+            padding-left: 5%;
+            padding-right: 5%;
+        }
+        h1{
+            font-size: 40px;
+            color: black;
+        }
+        p{
+            font-size: 20px;
+            color: black;
+        }
+        img
+        {
+            height: 100%;
+        }
+            
+        @media (max-width: 1000px) 
+            {
+               img{
+                width: 50%;
+                height: auto;
+               } 
+            }
+        @media (min-width:600) and ( max-width: 800px) {
+            display: flex;
+            flex-direction: column-reverse;
+            justify-content: flex-start;
+
+            img{
+                position: absolute;
+                top: 20vh;
+                width: auto;
+                height: 30vh;
+            }
+
+            article{
+                position:absolute;
+                bottom: 10vh;
+                width: 80vw;
+            }
+
+        }
+
+        @media (max-width: 600px) {
+            display: flex;
+            flex-direction: column-reverse;
+            justify-content: flex-start;
+
+            img{
+                width: auto;
+                height: 30vh;
+            }
+
+            article{
+                width: 80vw;
+            }
+
+        }
+    }
+    &_3 {
+        @extend .container;
+        background-color: $color-primary;
+        align-items: center;
+        
+        article{
+            width: 40%;
+            height: auto;
+            padding-left: 5%;
+            padding-right: 5%;
+        }
+        
+        img{
+            width: 50%;
+                height: auto;
+        }
+
+        h1{
+            font-size: 40px;
+            color: white;
+        }
+        p{
+            font-size: 20px;
+            color: white;
+        }
+
+
+        @media (max-width: 800px) {
+            display: flex;
+            flex-direction: column;
+            img{
+                position: absolute;
+                top: 10vw;
+                width: auto;
+                height: 50vh;
+            }
+            article{
+                width: 60vw;
+                position: absolute;
+                bottom:10vh;
+                
+            }
+
+        }
+
+        @media (max-width: 600px) {
+            display: flex;
+            flex-direction: column;
+            img{
+                position: absolute;
+                top: 30vw;
+                width: auto;
+                height: 30vh;
+            }
+            article{
+                width: 60vw;
+                position: absolute;
+                bottom:10vh;
+                
+            }
+
+        }
+    }
+    &_2 {
+        @extend .container;
+        flex-flow: column;
+        background-color: $color-secondary;
+        h1{
+            font-size: 40px;
+            color: black;
+        }
+        p{
+            font-size: 20px;
+            color: black;
+        }
+        align-items: center;
+        @media (max-width: 600px) {
+            height: auto;
+        }
+    }
+}
+
+#figurinha{
+    position: relative;
+    height: 95vh;
+    #lenin{
+        height: 100%;
+        position:absolute;
+        bottom:0;
+        left: 20%;
+    }
+    #praca{
+        height: 100%;
+        position: absolute;
+        right: 20%;
+        bottom: 0;
+        
+    }
+    @media (max-width: 500px) {
+
+        #lenin {
+            width: 100%;
+            left:0;
+        }
+        #nuvem{
+            display: none;
+          
+        }
+    }
+}
+
+h1{
+    font-size: 30px;
+    align-items: center;
+}
+
+
+
+
+p{
+    font-size: 15px;
+}
+#sobre {
+    box-shadow: 1px 1px 1px 1px rgb(217, 231, 22);
+}
+
+@import 'vitrine';
