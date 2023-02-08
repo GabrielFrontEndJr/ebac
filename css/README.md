@@ -1,1 +1,2 @@
-É só clicar no index e rodar :)
+1 Executar npm install
+2 http-server
