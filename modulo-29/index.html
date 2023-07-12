@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Filtrar Carne por Tipo de Animal</title>
+  <script src="carne.js"></script>
+</head>
+<body>
+  <h1>Filtrar Carne por Tipo de Animal</h1>
+
+  <label for="vaca">Vaca</label>
+  <input type="radio" name="animal" id="vaca" value="vaca">
+
+  <label for="porco">Porco</label>
+  <input type="radio" name="animal" id="porco" value="porco">
+
+  <label for="frango">Frango</label>
+  <input type="radio" name="animal" id="frango" value="frango">
+
+  <button onclick="filtrarCarne()">Filtrar</button>
+
+  <ul id="resultado"></ul>
+
+  <script>
+    // Função para filtrar carnes
+    function filtrarCarne() {
+      const radios = document.getElementsByName('animal');
+      let animalSelecionado;
+
+      // Verificar qual radio foi selecionado
+      for (let i = 0; i < radios.length; i++) {
+        if (radios[i].checked) {
+          animalSelecionado = radios[i].value;
+          break;
+        }
+      }
+
+      const resultadoElement = document.getElementById('resultado');
+
+      // Filtrar carnes por tipo de animal
+      const resultado = filtrarPorAnimal(carne, animalSelecionado);
+
+      // Limpar lista de resultados
+      resultadoElement.innerHTML = '';
+
+      // Adicionar itens filtrados à lista
+      resultado.forEach(item => {
+        const li = document.createElement('li');
+        li.textContent = item.nome;
+        resultadoElement.appendChild(li);
+      });
+    }
+  </script>
+</body>
+</html>
