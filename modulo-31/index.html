@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Buscar Países</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+  <div class="container mt-5">
+    <div class="form-group">
+      <label for="nomePais">Digite o nome do país:</label>
+      <input type="text" class="form-control" id="nomePais" placeholder="Digite o nome do país">
+    </div>
+    <button class="btn btn-primary" onclick="buscarPais()">Buscar</button>
+    <div id="resultado" class="mt-4"></div>
+  </div>
+
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script>
+  function buscarPais() {
+    const nomePais = document.getElementById('nomePais').value;
+    const xhr = new XMLHttpRequest();
+
+    xhr.open('GET', 'https://restcountries.com/v3.1/name/' + nomePais, true);
+
+    xhr.onload = function() {
+      if (xhr.status == 200) {
+        const pais = JSON.parse(this.response)[0];
+        const resultadoDiv = document.getElementById('resultado');
+        resultadoDiv.innerHTML = '';
+
+        if (pais) {
+          const paisCard = document.createElement('div');
+          const paisBandeira = document.createElement('img');
+          paisCard.innerHTML = pais.name.common;
+          resultadoDiv.appendChild(paisCard);
+
+          if (pais.flags && pais.flags.svg) {
+            paisBandeira.src = pais.flags.svg;
+            resultadoDiv.appendChild(paisBandeira);
+          } else {
+            resultadoDiv.innerHTML = 'Bandeira não encontrada';
+          }
+        } else {
+          resultadoDiv.innerHTML = 'País não encontrado';
+        }
+      }
+    };
+
+    xhr.send();
+  }
+</script>
+</body>
+</html>
