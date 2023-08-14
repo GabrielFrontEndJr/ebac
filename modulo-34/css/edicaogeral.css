@@ -1,0 +1,180 @@
+	@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200&display=swap');
+	
+	body{
+	
+		color: white;
+		font-family:'Josefin Sans', sans-serif;
+		font-weight:bold;
+		overflow-x:hidden;
+		font-size:20px;
+	}
+	
+	header{
+		
+		position:relative;
+		
+	}
+	
+	.titulo{
+		
+		position:absolute;
+		top:0;
+		padding:2px;
+	}
+	
+	iframe{
+		
+		margin:15px;
+		border-color:red;
+		border-width:20px;
+	}
+	
+
+	
+	header{
+		
+		background-color:#50c878;
+		height:auto;
+		position:relative;
+		
+	}
+	
+	p {
+		
+		padding:5%;
+		padding-bottom:0;
+	}
+	
+	.cabecalho{
+		
+		margin-left:60%;
+		width:20%;
+		margin-top:0;
+
+	}
+	
+	td {
+		
+		margin-left:10px
+		
+	}
+	
+	
+	@media(min-width:720px){
+
+		
+		
+		section {
+			display:none;
+		}
+		
+		article{
+		
+			background-color: #af3787;
+			width:84%;
+			float:rigth;
+			margin-left:auto;
+			height:70%;
+			border-radius:10px;
+	}
+		
+
+	}
+	
+	@media(max-width: 720px){
+		
+		
+		nav{
+				display:none;
+				
+				
+			}
+		
+		article{
+		
+			background-color: #af3787;
+			width:100%;
+			height:auto;
+		}
+		
+	}
+	
+	
+	@media(max-width: 500px) {
+			
+		
+
+			
+			nav{
+				display:none;
+				
+			}
+		
+			article{
+		
+			background-color: #af3787;
+			width:100%;
+			height:auto;
+		}
+		
+		
+		
+		iframe {
+			
+			width:auto;
+			
+		}
+		
+		h1 {
+			
+			font-size:20px;
+			
+		}
+		
+		.botao {
+			
+			width:40px;
+			
+		}
+		
+	}
+	
+	.botao{
+	
+		width:80px;
+	    transition: all 0.5s;
+	
+}
+
+	.botao:hover{
+		cursor: pointer;
+		transform: scale(1.2);
+	}
+	
+	
+	section{
+		
+		background-color:#8fbc8f;
+		width:100%;
+		text-align:center;
+		margin-top:5px;
+	}
+	nav{
+	
+		background-color:#8fbc8f;
+		width:15%;
+		text-align:center;
+		float:left;
+		height:auto;
+		border-radius:10px;
+		margin-top:17px;
+
+	}
+	
+	
+	footer{
+		width:100%;
+		background-color: #ff4500;
+
+	
+	}

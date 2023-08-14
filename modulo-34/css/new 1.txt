@@ -1,0 +1,39 @@
+	body{
+	
+		color: white;
+	
+	}
+	
+	#fogo {
+	
+		margin-left: 45%;
+		margin-right:50%;
+	
+	}
+	
+	header { 
+		background-color: #50c878;
+	}
+	
+	.botao{
+	
+		width:80px;
+	
+	}
+	nav{
+	
+		background-color:#8fbc8f;
+	
+	}
+	
+	article{
+	
+		background-color: #af3787;
+	
+	}
+	
+	footer{
+	
+		background-color: #ff4500;
+	
+	}

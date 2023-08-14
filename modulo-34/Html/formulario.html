@@ -1,0 +1,122 @@
+<DOCTYPE! html>
+<html lang="pt-br">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width-device-width, initial-scale=1" >
+	<link rel="stylesheet" type="text/css" href="css\reset.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<style>
+		body {
+			font-family:'Josefin Sans', sans-serif;
+			background-color: #50c878;
+			color:white;
+		}
+		
+		#caixa {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -40%);
+			background-color: rgba( 0, 0, 0, 0.6);
+			padding:15px;
+			border-radius:15px;
+		}
+		
+		fieldset {
+		
+			border-color: #50c878;
+		
+		}
+		
+		.input{
+		
+		background:none;
+		position: relative;
+		border: 1px solid white;
+		
+		}
+		
+		#inicio{
+		
+		color:white;
+		position:absolute;
+		transform:translate(90%,0);
+		
+		}
+		
+		h1 {
+		
+		margin:30px;
+		
+		}
+		
+	</style>
+	
+</head>
+
+<body>
+
+	<h1 align="center">Participe do movimento</h1>
+	
+	
+	<br>
+	
+	<div id="caixa">
+		<form>
+			<fieldset>
+				
+				
+					<div>
+						<label for="nome">Nome Completo:</label><br>
+						<input name="nome" id="nome" type="text" class="input"><br><br>
+					</div>
+					
+					<div>
+						<label for="email">E-mail:</label><br>
+						<input name="email" id="email" type="text" class="input"><br><br>
+					</div>
+					
+					
+					<div>
+						<p>Mora no Pantanal?</p>
+						<input type="radio" name="mora" value="Sim" class="morapantanal">Sim
+						<input type="radio" name="mora" value="Não" class="morapantanal">Não
+					</div>
+					<br>
+					
+					<div>
+						<p>Deseja participar de nossos eventos?</p>
+						<input type="radio" name="eventos" value="Sim" class="eventos">Sim
+						<input type="radio" name="eventos" value="Não" class="eventos">Não
+						<br>
+					</div>
+					
+					<div>
+						<p>Quer receber atualizações?</p>
+						<input type="checkbox" class="checkbox">E-mail
+						<input type="checkbox" class="checkbox">Whatsapp
+						<input type="checkbox" class="checkbox">Telegram
+					</div>
+					
+					<br>
+					
+					<div>
+						<label for="mensagem">Mensagem</label><br>
+						<textarea name="mensagem" id="mensagem" rows="5" class="input"></textarea>
+					</div>
+					<br>
+				
+					<input type="submit" value="Enviar">
+					<a href="../index.html" align="center"><p id="inicio">Pagina inicial</p></a>
+					
+			</fieldset>
+		</form>
+	
+	</div>
+	
+	
+	
+</body>
+
+</html>
